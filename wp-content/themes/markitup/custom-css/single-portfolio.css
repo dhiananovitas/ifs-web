@@ -1,0 +1,734 @@
+/* Basic Css End */
+.banner-sec {
+    height: calc(100vh - 120px);
+    text-align: center;
+}
+#background {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    !display: flex;
+    !justify-content: center;
+    !flex-direction: column;
+}
+#bg-text {
+    color:#f0f0f0;
+    font-size:200px;
+    user-select: none;
+}
+p.myptag {
+    font-size: 70px;
+}
+.entry-content {
+    margin-top: 120px;
+}
+.wrap {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.box {
+  transform: translateY(0px);
+}
+.box {
+    transition: 1s;
+}
+h1{
+	padding:0px;
+	margin:0px 0px 30px;
+	line-height:80px;
+}
+h2{
+	font-size: 40px;
+	font-weight: 600;
+	padding:0px;
+	margin:0px;
+	line-height:60px;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+p {
+    margin: 0; 
+}
+h3 {
+    font-size: 40px;
+    line-height: 42px;
+}
+.banner-section {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 80px;
+}
+a{
+	cursor:pointer;
+}
+footer#colophon {
+    margin: 0px;
+    margin-top: -77px;
+}
+.site-content-contain div#content {
+    padding-bottom: 0px !important;
+}
+/* Basic Css End */
+
+
+
+
+/* First Section */
+
+.banner-section.first-section{
+	float: left;
+	!margin-top:-120px;
+	margin-bottom:80px;
+}
+.my-featured-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	height:100%;
+}
+.banner-content {
+    position: absolute;
+    text-align: center;
+    width: 70%;
+}
+img.single-featured-image {
+    width: 100%;
+	height:100%;
+    object-fit: cover;
+}
+.banner-content h1 {
+    line-height: 80px;
+	color:#fff;
+}
+.banner-content p {
+	color:#fff;
+}
+hr.banner-line {
+    max-width: 150px;
+    margin: 0 auto;
+    border: 0;
+    border-top: 2px solid #fff;
+    margin-bottom: 50px;
+}
+.banner-content h1 {
+    margin-top: 30px;
+}
+img.banner-logo {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.scroll-downs {
+  margin: auto;  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 30px;
+  height: 50px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 1;
+  box-sizing: content-box;
+  border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box; 
+}
+.scroller {
+  width: 6px;
+  height: 6px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+.banner-section-inner {
+    height: calc(100vh - 120px);
+    !background: url(../../../../../www.webstraxt.com/wp-content/uploads/2018/11/Webstraxt_Bakers_Larners-1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: cover !important;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+/* end First Section */
+
+/* second Section */
+.block-inner ul {
+    padding-left: 20px;
+}
+.block-inner {
+    float: left;
+    margin-bottom: 80px;
+	padding-right: 40px;
+	z-index: 98;
+    position: relative;
+}
+.block-inner p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+img.image-type-one {
+    !height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+	object-fit: cover;
+}
+img.image-type-two {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 30px;
+	object-fit: cover;
+}
+
+.modal-dialog {
+	!top:80px;
+	width: 50%;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+a.left.carousel-control, a.right.carousel-control {
+    box-shadow: none !important;
+    background-image: none;
+	    width: 30px;
+    height: 30px;
+    bottom: -30px;
+    top: auto;
+	opacity: 1;
+}
+.modal-content {
+    box-shadow: none !important;
+    background: transparent;
+    border: none;
+}
+.modal-header {
+    padding: 0px;
+    border-bottom: 0px solid #e5e5e5;
+}
+.modal-footer {
+    padding: 0px;
+    text-align: right;
+    border-top: 0px solid #e5e5e5;
+}
+.item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: none;
+    filter: alpha(opacity=20);
+    opacity: 1;
+}
+.close:focus, .close:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    background: transparent !important;
+    opacity: 1;
+} 
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+	font-size:20px;
+}
+.carousel-control.right {
+    right: auto;
+    left: 35px;
+}
+button.btn-sm.close {
+    display: none;
+}
+.modal-open .modal {
+    z-index: 9999;
+}
+/* end First Section */
+body, label {
+    padding: 0px !important; 
+}
+section.second-section.side-space {
+    width: 100%;
+}
+
+@media (min-width:320px) and (max-width:550px){
+	img.image-type-one, img.image-type-two{
+		height: 350px;
+		width: 100%;
+	}
+	.modal-dialog {
+		top: 80px;
+		width: 90%;
+	}
+	.block-inner {
+		margin-bottom: 40px;
+		padding-right: 0px;
+	}
+	.modal-dialog .modal-body .item img {
+		height: 350px !important;
+	}
+	.modal-header .close {
+		margin-top: 10px;
+	}
+	.block-inner {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+	h2 {
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 30px
+	} 
+	.page-banner-content h1 {
+		padding-top: 0px !important;
+		font-size:40px;
+		line-height:55px;
+		font-weight:900;
+	}
+	section#second-section .side-space .col-lg-12 {
+		padding: 0;
+	}
+	.banner-content {
+		width: 97%;
+	}
+	img.single-featured-image {
+		height: 450px;
+	}
+	.banner-content h1 {
+		line-height: 55px;
+	}
+	div#next-section {
+		padding: 0;
+	}
+	.block-inner {
+		width: 100%;
+	}
+}
+@media (min-width:551px) and (max-width:767px){
+	img.image-type-one, img.image-type-two{ 
+		height: 350px;
+		width: 100%;
+	}
+	.modal-dialog {
+		top: 20px;
+		width: 90%;
+	}
+	.block-inner {
+		margin-bottom: 40px;
+		padding-right: 0px;
+	}	
+	.modal-dialog .modal-body .item img {
+		height: 260px !important;
+	}
+	.block-inner {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+	h2 {
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 30px
+	}
+	.page-banner-content h1 {
+		padding-top: 0px !important;
+		font-size:40px;
+		line-height:55px;
+		font-weight:900;
+	}
+	section#second-section .side-space .col-lg-12 {
+		padding: 0;
+	}
+	.banner-content {
+		width: 97%;
+	}
+	.banner-content h1 {
+		line-height: 55px;
+	}
+	div#next-section {
+		padding: 0;
+	}
+	.block-inner {
+		width: 100%;
+	}
+}
+@media (min-width:1000px) and (max-width:1100px){
+	img.image-type-one, img.image-type-two{
+		height: 500px;
+		width: 50%;
+		float: left;
+		padding: 0px 15px;
+	}
+	.modal-dialog {
+		top: 80px;
+		width: 90%;
+	}
+	.block-inner {
+		margin-bottom: 40px;
+		padding-right: 0px;
+	}
+}
+@media (min-width:768px) and (max-width:1000px){
+	img.image-type-one, img.image-type-two{
+		height: 350px;
+		width: 50%;
+		float: left;
+		padding: 0px 15px;
+	}
+	.modal-dialog {
+		top: 80px;
+		width: 90%;
+	}
+	.block-inner {
+		margin-bottom: 40px;
+		padding-right: 0px;
+	}
+}
+.modal-dialog .modal-body .item img {
+    height: 600px;
+    object-fit: cover;
+}
+.block-inner h2:first-child {
+    margin-top: 0;
+}
+
+@media (max-width:767px){
+.site-content-contain div#content .wpb_raw_code.wpb_content_element.wpb_raw_html iframe {
+    height: 211px !important;
+}
+}
+
+
+
+
+
+.entry-content {
+    margin-top: 120px;
+}
+.wrap {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.second-section .col-md-6.title-divs {
+    padding-top: 50px !important;
+}
+
+.site-content-contain div#content {
+    padding-bottom: 0px !important;
+}
+body{
+    color: #000 !important;
+}
+
+/*css-akshay*/
+section#second-section {
+    display: inline-block;
+} 
+/*banner*/
+.outer {
+    height: calc(100vh - 120px);
+    !background: url(../../../../../www.webstraxt.com/wp-content/uploads/2018/11/Webstraxt_Bakers_Larners-1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: cover !important;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.page-banner-cover {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    display: table;
+}
+.page-banner-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.page-banner-content hr {
+    max-width: 150px;
+    margin: 0 auto;
+    border: 0;
+    border-top: 2px solid #fff;
+    margin-bottom: 50px;
+}
+.page-banner-content h1 {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    color: #fff;
+	font-size:80px;
+}
+.page-banner-content h2 {
+    padding-top: 0px;
+    color: #fff;
+    font-size: 32px;
+}
+a.scroll-down {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    z-index: 9999;
+    display: inline-block;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    color: #fff;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+a.scroll-down span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+a.scroll-down span:before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+.col-md-12.site-branding.side-space {
+    background-color: #fff;
+}
+
+@-webkit-keyframes sdb10{0%{-webkit-transform:translate(0,0);opacity:0}40%{opacity:1}80%{-webkit-transform:translate(0,20px);opacity:0}100%{opacity:0}}@keyframes sdb10{0%{transform:translate(0,0);opacity:0}40%{opacity:1}80%{transform:translate(0,20px);opacity:0}100%{opacity:0}}
+
+.inner {
+    height: 100%;
+}
+/*banner*/
+
+
+/*second*/
+div#next-section .col-lg-5 div#background p#bg-text {
+    overflow-wrap: anywhere;
+}
+.inner-second.col-md-12 .col-md-6 {
+    padding: 0px;
+}
+.title-divs h2 {
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+.title-div {
+    height: 70px;
+    margin-bottom: 30px;
+}
+span.case-cat {
+    margin-left: 20px;
+}
+section.second-section.side-space {
+    display: inline-block;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+/*second*/
+
+
+/*fifth*/
+
+section.second-section.side-space.content-second-one{
+    padding-bottom: 80px;
+}
+
+/*fifth*/
+/*ninth*/
+section.second-section.side-space {
+    background-color: var(--bgColor1);
+}
+section.second-section.side-space.content-second-one{
+    background-color: var(--bgColor2);
+}
+section.second-section.side-space.content-last-one {
+    color: #fff;
+    background-color: var(--bgColor3);
+    padding-bottom: 80px;    margin-bottom: -10px;
+}
+
+section.second-section.side-space.content-last-one h2 {
+    color: #fff;
+}
+/*ninth*/
+
+p#bg-text {
+    margin: 0px;
+}
+div#background {
+    position: absolute;
+    margin-top: -300px;
+}
+.z-index-div {
+    position: relative;
+    z-index: 6;
+}
+.banner-content h2 {
+    color: #fff;
+}
+.temp-two p#bg-text {
+    transform: translateY(50%);
+}
+section#second-section0 {
+    padding-top: 0px;
+}
+.wpb_raw_code.wpb_content_element.wpb_raw_html, section.fourth-sec-img.common-fullwith-img, .banner-section{
+    position: relative;
+    z-index: 2;
+}
+.inner-second.col-md-12 .col-md-6 {
+    padding: 0px;
+    position: relative;
+}
+div#second-section {
+    display: block;
+}
+.col-md-6.title-divs div#background {
+    margin-top: -150px;    z-index: 0;
+    width: 100%;
+}
+div#second-section {
+    display: none !important;
+}
+section#second-section0 div#second-section {
+    position: relative;
+    z-index: 4;
+    display: block !important;
+}
+@media(max-width:991px){
+.title-divs h2 {
+    margin-bottom: 30px;
+    transform: none !important;
+    position: relative;
+}
+section#second-section div#background {
+    margin-top: 0px;
+}
+.page-banner-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}  
+.outer {
+    !height: auto;
+}
+section.second-section.side-space p#bg-text {
+    transform: translateY(-0%);
+}
+.col-md-6.title-divs div#background {
+    position: absolute;
+    margin-top: 150px;
+}
+.wpb_raw_code.wpb_content_element.wpb_raw_html, section.fourth-sec-img.common-fullwith-img, .banner-section {
+    position: relative;
+    z-index: 5;
+}
+.wpb_raw_code.wpb_content_element.wpb_raw_html iframe {
+    height: auto !important;
+}
+span.case-cat {
+    margin-left: 0px;
+}
+}
+@media(min-width:768px) and (max-width:991px){
+
+section#second-section div#background {
+    margin-top: 0px;
+}
+}
+
+@media (min-width:991px) and (max-width:1200px){
+div#background {
+    margin-top: 0px;
+}
+}
+
+@media(max-width:1200px){
+
+.temp-two p#bg-text {
+    transform: translateY(100vh) !important;
+}
+}
+@media(max-width:991px){
+    body{
+        !overflow-y:hidden;
+    }
+.temp-two p#bg-text {
+    transform: translateY(80px) !important;
+    text-align: left !important;
+    justify-content: left;
+}
+}
+
+@media(max-width:767px){
+
+.temp-two p#bg-text {
+    transform: translateY(0px) !important;
+}
+section#second-section p#bg-text {
+    font-size: 120px !important;
+    line-height: 130px !important;
+}
+}
+p#bg-text {
+    height: auto;
+}
+.main-site-brading {
+    height: 120px;
+}
+iframe {
+    margin-bottom: -15px;
+}
+section.second-section.side-space div#background {
+    z-index: 0;
+}
+section.second-section.side-space .inner-second.col-md-12 {
+    position: relative;
+    z-index: 2;
+}
+
+@media(min-width:1024px){
+.wpb_raw_code.wpb_content_element.wpb_raw_html iframe {
+    height: 100vh;
+}
+}
+@media(min-width:1910px){
+iframe {
+    height: 700px !important;
+}
+}

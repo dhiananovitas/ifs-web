@@ -1,0 +1,393 @@
+/* Basic Css End */
+.banner-sec {
+    height: calc(100vh - 120px);
+    text-align: center;
+}
+#background {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    !display: flex;
+    !justify-content: center;
+    !flex-direction: column;
+}
+
+#bg-text {
+    color:#f0f0f0;
+    font-size:200px;
+    user-select: none;
+}
+p.myptag {
+    font-size: 70px;
+}
+.entry-content {
+    margin-top: 120px;
+}
+.wrap {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer#colophon {
+    margin: 0px;
+    margin-top: -77px;
+}
+.site-content-contain div#content {
+    padding-bottom: 0px !important;
+}
+/* Basic Css End */
+
+
+
+ul.nav.nav-tabs.tabs-left.sideways {
+    background: #fff !important;
+}
+.panel-title > a:before {
+	display:none;
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\f068";
+	background: #f15b6c;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 4px 0px;
+	border-radius: 50%;
+    color: #fff;	
+    margin-left: -5px;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+h2.panel-title {
+    font-size: 40px;
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0px solid #ddd;
+}
+.panel-title > a.collapsed:before {
+	display:none;
+    float: left !important;
+    content: "\f067";
+    background: #71bf36;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 4px 0px;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: -5px;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.panel.panel-default {
+    padding: 0px 0px;
+    border-bottom: solid 0px #6109e8 !important; 
+	margin-bottom:20px;
+}
+
+.panel.panel-default:last-child {
+    border-bottom: solid 0px #6109e8 !important;
+}
+
+/* .panel.panel-default.myactive {
+    border-bottom: solid 0px #6109e8;
+	position:relative; 
+} */
+
+h4.panel-title a {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+}
+	.panel.panel-default {
+		background: transparent;
+	}
+	
+	.panel.panel-default a{
+		box-shadow:none !important;
+		border-radius:0;
+		width: 100%;
+		display: block;
+		line-height:40px;
+	}
+	
+	/*  .myactive{
+		!background:#6109e8  !important;
+		background-image: linear-gradient(to right, #02AFD1 , #00B2D2) !important; 
+	} */
+
+	/* .panel.panel-default.myactive a {
+		color: #fff;
+		width: 100%;
+		display: block;
+	} */
+
+	.panel.panel-default a {
+		color: #000;
+		font-weight: 600;
+	}
+	
+	.panel-body{
+		color:#fff;
+		font-weight:600;
+	}
+	.panel.panel-default {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.left-side-tab-active{
+	background-image: linear-gradient(to right, #02AFD1 , #00B2D2) !important;
+	color:#fff;
+}
+ul.left-side-tab {
+    list-style-type: none;
+}
+ul.left-side-tab li a {
+    padding: 10px;
+    display: block;
+	cursor:pointer;
+}
+a:hover{
+	text-decoration:none;
+}
+.panel-heading {
+    padding: 0px;
+}
+.panel-heading h2 a {
+    padding: 25px 15px 20px;
+}
+.panel-body {
+    padding: 5px 15px 25px;
+}
+/*  .panel.panel-default.myactive:before {
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    content: "";
+    background-image: url(<?=site_url();?>/wp-content/uploads/2020/04/FAQ-bluepurple.png);
+    left: 15px;
+    top: 15px; 
+    position: absolute;
+} */
+
+/* Vertical Tabs */
+
+.tabs-left {
+  border-bottom: none;
+  border-right: 1px solid transparent;
+}
+
+.tabs-left>li {
+  float: none;
+ margin:0px;
+  
+}
+
+.tabs-left li a:hover {
+    background: transparent;
+    color: #000 !important;
+    border-right: solid 0px #00b1d1;
+    border-radius: 0;
+}
+.tabs-left li a {
+    margin-right: 0px;
+}
+
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  background:transparent;
+  border:none;
+  border-radius:0px;
+  margin:0px;
+  color:#000 !important;
+}
+.nav-tabs>li>a:hover {
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+}
+.tabs-left>li.active>a::after{
+	display:none !important; 
+	content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  
+  border-left: 10px solid #f90;
+    display: block;
+    width: 0;}
+
+/* //Vertical Tabs */
+
+ul.nav.nav-tabs.tabs-left.sideways li a {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #dedede;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.section-four.side-space .col-sm-12.rellax {
+    padding: 0px;
+}
+.section-four.side-space {
+    position: relative;
+    z-index: 2;
+}
+
+
+.panel.panel-default{
+     position: relative;
+}
+.panel-group .panel.panel-default.collapsed {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+.panel-group .panel.panel-default.myactive:before {
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -999 !important;
+    content: "";
+    left: 8px !important;
+    top: 8px !important;
+    position: absolute !important;
+}
+.panel-group .panel.panel-default.collapsed:before {
+   !display:none !important;
+}
+.panel.panel-default {
+    position: relative;
+}
+.panel.panel-default.collapsed.myactive:before {
+    width: 100%;
+    height: 100%; 
+    z-index: -999;
+    content: "";
+    left: 15px;
+    top: 15px;
+    position: absolute;
+    display: block !important;
+}
+.panel.panel-default.collapsed.myactive a.accordion-toggle, .panel.panel-default[aria-expanded="true"] a.accordion-toggle {
+    color: #fff;
+}
+
+.panel-group .panel-default.collapsed {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.panel-group .panel-default.collapsed:before {
+   display:none !important;
+}
+.panel-default {
+    position: relative;
+}
+
+.panel-default.collapsed.myactive a.accordion-toggle, .panel-default[aria-expanded="true"] a.accordion-toggle {
+    color: #fff;
+}
+@media (min-width:320px) and (max-width:550px){
+	.section-four.side-space .col-sm-12.rellax .col-xs-12.col-sm-4{
+		padding:0px;
+	}
+	.section-four.side-space .col-sm-12.rellax .col-xs-12.col-sm-8.barnding-faq{
+		padding:0px;
+	}
+   /* .panel.panel-default.myactive:before {
+		left: 8px !important;
+		top: 8px !important;
+	} */
+	ul.nav.nav-tabs.tabs-left.sideways {
+		margin-bottom: 30px;
+		padding: 0px 10px;
+	}
+	ul.nav.nav-tabs.tabs-left.sideways li a {
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 30px;
+	}
+	h2.panel-title {
+		font-size: 25px;
+	}
+	h2.panel-title a.accordion-toggle {
+		line-height: 30px !important;
+	}
+}
+@media (min-width:551px) and (max-width:767px){
+	.section-four.side-space .col-sm-12.rellax .col-xs-12.col-sm-4{
+		padding:0px;
+	}
+	.section-four.side-space .col-sm-12.rellax .col-xs-12.col-sm-8.barnding-faq{
+		padding:0px;
+	}
+	 /* .panel.panel-default.myactive:before {
+		left: 8px !important;
+		top: 8px !important;
+	} */
+	ul.nav.nav-tabs.tabs-left.sideways {
+		margin-bottom: 30px;
+		padding: 0px 10px;
+	}
+	ul.nav.nav-tabs.tabs-left.sideways li a {
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 30px;
+	}
+	h2.panel-title {
+		font-size: 25px;
+	}
+	h2.panel-title a.accordion-toggle {
+		line-height: 30px !important;
+	}
+}
+@media (min-width:768px) and (max-width:999px){
+	.section-four.side-space .col-sm-12.rellax .col-xs-12.col-sm-4{
+		padding:0px;
+	}
+}
+.faq-cate-section{display:none;}
+button.show-faq-categories:focus {
+	background-color: #fb0b7e !important;
+}
+button.show-faq-categories {
+    background-color: #fb0b7e;
+    /* position: absolute; */
+    z-index: 1;
+    font-size: 14px;
+    text-align: left;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 15px;
+    /* display: block !important; */
+    color: #fff !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+}
+.show-faq-categories i{
+	float:right;
+}
+.barnding-faq .panel-group .panel-default.collapsed:before {
+    background-image: none !important;
+}
+  

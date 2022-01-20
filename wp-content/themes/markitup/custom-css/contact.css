@@ -1,0 +1,14 @@
+.contact-formy.home-form-sec.side-space {
+    display: block !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.section-seven.team-sec.side-space {
+    display: none !important;
+}
+.contact-formy.home-form-sec.side-space a.foot-close {
+    display: none !important;
+}
+div#content {
+    padding-bottom: 0px !important;
+} 
