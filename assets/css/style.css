@@ -1777,7 +1777,7 @@ body {
 .header-mobile .header-top-mobile .search-box form .search-icon {
     width: 51px;
     height: 51px;
-    background: #ffc20a;
+    background: beige;
 }
 .header-mobile .header-top-mobile .search-box form .search-icon .fa {
     color: #333;
@@ -1806,7 +1806,7 @@ body {
     display: block;
     list-style-type: none;
     list-style-type: none;
-    background: #ffc20a;
+    background: #8f6900;
 }
 .au-nav-mobile ul li {
     position: relative;
