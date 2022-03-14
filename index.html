@@ -27,20 +27,37 @@
     <!-- <link rel="stylesheet" href="assets/scss/style.scss"> -->
     <link rel="shortcut icon" href="assets/images/galeri/logo-ifs.png">
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
   </head>
   <body>
-    <div class="images-preloader">
-      <!-- <div id="preloader_1" class="rectangle-bounce"> -->
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div id="menu"></div>
+    <nav class="global-sticky-nav">
+      <div class="wrap-section">
+          <a href="https://www.jamtangan.com/" class="logo-landing-page"> 
+              <img class="logo-landing" src="assets/images/galeri/logo-ifs1.png" width="auto" height="36" alt="Logo Machwatch"> 
+          </a>
+          <input id="burger" type="checkbox">
+          <label for="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label>
+              <div class="menus">
+                  <a href="#banner">
+                      <i class="ic-home" style="background-image: url(assets/images/ic-home.png);"></i>
+                  </a> 
+                  <a href="#about">About</a> 
+                  <a href="#values">Values</a> 
+                  <a href="#mission">Mission</a>                        
+                  <a href="#product">Our Products</a>
+                  <a href="#news">News</a>
+                  <a href="#milestone">Milestone</a>
+              </div>
       </div>
-    </div>
+  </nav>
     <header class="header header-1">
-      <div class="hidden-tablet-landscape-up header-mobile">
+     <div class="hidden-tablet-landscape-up header-mobile">
         <div class="header-top-mobile">
           <div class="container-fluid">
               <div class="logo">
@@ -92,9 +109,8 @@
               </div>
           </nav>
       </div>
-      <!-- <div class="clear"></div> -->
       <div class="clear"></div>
-  </div>
+  </div> 
       <div class="hidden-tablet-landscape header-bottom" id="js-navbar-fixed">
         <div class="container">
           <div class="header-bottom-content display-flex">
@@ -270,12 +286,12 @@
             </section>
           </main>
       </section> -->
-     <section class="img-banner" id="banner">
+     <section class="img-banner banner page-section" id="banner">
         <!-- <img src="assets/images/galeri/glr1.png" style="width: 100%; position: relative; display: block;"> -->
         <!--  BANNER SLIDER  -->
         <div class="banner">
-            <div class="row fullwidth">
-                <div class="col-md-12">
+            <div class="fullwidth">
+                <div class="">
                     <ul class="bannerSlider">
             <!--  1. slide  -->
                         <li class="slide">
@@ -326,9 +342,19 @@
             </div>
         </div>
      </section>
+
+     <!-- <section class="mobile-banner page-section">
+        <div id="slider">
+          <figure>
+            <img src="assets/images/galeri/glr1.png" alt="" />
+            <img src="assets/images/galeri/glr2.png" alt="" />
+            <img src="assets/images/galeri/glr3.png" alt="" />
+          </figure>
+        </div>
+     </section> -->
       
     
-      <section id="about" class="about p-t-80 p-b-100">
+      <section id="about" class="about p-t-80 p-b-100 page-section">
           <div class="container">
             <div class="section-title">
                 <h2>About</h2>
@@ -348,7 +374,7 @@
             </div>
           </div>
       </section>
-      <section id="values" class="services p-t-80 p-b-100">
+      <section id="values" class="services p-t-80 p-b-100 page-section">
         <h4 class="heading-section">Heading section</h4>
         <div class="container">
             <div class="section-title">
@@ -422,7 +448,7 @@
         </div>
       </section>
      
-      <section id="mission" class="our-process p-t-80 p-b-100">
+      <section id="mission" class="our-process p-t-80 p-b-100 page-section">
         <div class="container">
           <div class="section-title">
             <h2>Our Mission</h2>
@@ -496,7 +522,7 @@
           
         </div>
       </section>
-      <section id="#testimonials" class="testimonials home1-testimonials">
+      <section id="#testimonials" class="testimonials home1-testimonials page-section">
         <h4 class="heading-section">Heading section</h4>
         <div class="testimonials-content">
           <article class="item">
@@ -519,7 +545,7 @@
           </article>
         </div>
       </section>
-      <section id="product" class="our-team">
+      <section id="product" class="our-team page-section">
         <div class="section-title">
           <h2>Our Product</h2>
         </div>
@@ -587,7 +613,7 @@
           </div>
         </div>
       </section>
-      <section class="cta p-t-100 p-b-100">
+      <section class="cta p-t-100 p-b-100z">
         <h4 class="heading-section">Heading section</h4>
         <div class="container">
           <div class="cta-content">
@@ -674,7 +700,7 @@
         </div>
       </section>
       
-      <section id="milestone" class="milestone p-t-80 p-b-40">
+      <section id="milestone" class="milestone p-t-80 p-b-40 page-section">
         <div class="container">
           <div class="section-title">
             <h2>Milestone</h2>
@@ -851,32 +877,28 @@
 
 <script>
   $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $(".menu-item a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+    /* untuk hide saat klik menu */
+    $(".menus a").click(function(){ $('.global-sticky-nav input').prop('checked', false); });
+    /* untuk active scroll */
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        $('.page-section').each(function(i) {
+          console.log("errorrrr");
+            if ($(this).position().top-100 <= scrollDistance) {
+                $('.menus a.active').removeClass('active');
+                $('.menus a').eq(i).addClass('active');
+            }
         });
-      } // End if
-      
-    });  
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            $('.menus a.active').removeClass('active');
+            $('.menus a:last-child').addClass('active');
+        }
+    }).scroll();
+    
   });
-
   </script>
+
+
   </body>
   <!-- Mirrored from freebw.com/templates/bricktower-v1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jan 2022 02:27:10 GMT -->
 </html>

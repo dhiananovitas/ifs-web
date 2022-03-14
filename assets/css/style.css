@@ -1,4 +1,5 @@
-body{margin:none !important;}
+@media screen and (max-width: 1200px) {
+body{margin:none !important;scroll-behavior: smooth;}
 display-flex,
 .display-flex,
 .display-flex-center,
@@ -659,9 +660,87 @@ body {
     position: relative;
     border-radius: 6px;
   }
+  /* .mobile-banner{display: none;} */
+  .global-sticky-nav {display: none;}
+}
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
+      /* header fix menu */
+    .header-1{display: none;}
+    :target { display: block; padding-top: 65px; margin-top: -65px;}
+
+    .global-sticky-nav input {position: absolute;visibility:hidden;}
+    .global-sticky-nav input + label { position: fixed; top: 24px; left: 20px; height: 20px; width: 20px; z-index: 5; display: block;}
+    .global-sticky-nav input + label span { position: absolute; width: 100%; height: 2px; top: 50%; margin-top: -1px; left: 0; display: block; background: #fff; transition: .5s;}
+    .global-sticky-nav input + label span:first-child {top: 3px;}
+    .global-sticky-nav input + label span:last-child {top: 16px;}
+    .global-sticky-nav label:hover {cursor: pointer;}
+    .global-sticky-nav input:checked + label span {opacity: 0;top: 50%;}
+    .global-sticky-nav input:checked + label span:first-child {opacity: 1;transform: rotate(405deg);}
+    .global-sticky-nav input:checked + label span:last-child {opacity: 1;transform: rotate(-405deg);}
+    .global-sticky-nav input:checked ~ .menus { height: 100%; transition-delay: 0s; display: block; }
+    .global-sticky-nav input:checked ~ .menus > a > { opacity: 1; transition-delay: .5s; }
+    .global-sticky-nav {display: block; ;position: fixed; top: 0; z-index: 103;background: #d1b461; text-align: center; width: 100%; padding: 15px 0; overflow-x: hidden;} 
+    .global-sticky-nav a:first-child { font-size: 2vw; top: 10px; } 
+    .global-sticky-nav a { margin: 0 10px; font-size: 13px; float: none; top: 10px; position: relative; }
+    .global-sticky-nav .ic-home {width: 16px; height: 16px; background-position: 0 0; position: relative; display: block;}
+    .global-sticky-nav input:checked~.menus { height: 100%;transition-delay: 0s; display: block; }
+    .page-section {padding-top:68px; position: relative;}
+
+    /* menu */
+    .menus {display: none;padding-top: 20px;}
+    .menus a { display: block; top: auto!important;text-align: left; padding: 10px;color: #fff;}
+    .menus a.active{ color: #56310b; }
+
+    /* logo mw */
+    .logo-landing { vertical-align: middle; position: relative; top: -8px; float: none;width: 50px;}
+    .logo-landing-page{ position: relative; float: none; width: 100%; vertical-align: middle; margin: 0 auto; }
+    .logo-landing-page a { margin: 0 10px; font-size: 13px; float: none; top: 0px; position: relative; }
+
+      .bannerSlider{width: 100%;}
+      .slide img{width: 40%;}
+      .mobile-banner{width: 100%;}
+
+      ul.bannerSlider{
+        padding-left:0;
+      }
+      .bannerSlider{
+          height: 300px;
+      }
+      .bannerSlider .slide__image::before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 300px;
+          background: rgba(33,33,33,.7);
+      }
+      .bannerSlider .slick-slide {
+          position: relative;
+      }
+      .bannerSlider .slide__image img {
+          width: 100%;
+          height: 300px;
+          object-fit:cover;
+      }
+      img.slide__image__top-position {
+          object-position:center bottom;
+      }
+      .bannerSlider .slide__text {
+          position: absolute;
+          z-index: 100;
+          text-align: center;
+          width: 100%;
+          top: 30%;
+            /* transform: translateY(-50%); */
+      }
+      .bannerSlider .slide__text h2 {
+          font-size: 24px;
+          font-weight: 100;
+      
+          color: #fff;
+      }
+
     /* Place the timelime to the left */
     .timeline::after {
     left: 31px;
@@ -1010,7 +1089,7 @@ body {
     padding-bottom: 80px;
 }
 .p-b-100 {
-    padding-bottom: 95px;
+    padding-bottom: 55px;
 }
 .example-val:before {
     content: "Value: ";
@@ -2274,6 +2353,10 @@ body {
     margin-bottom: 70px;
 }
 
+
+
+
+
 /* banner-slider */
 /*reset*/
 ul.bannerSlider{
@@ -2314,6 +2397,7 @@ ul.bannerSlider{
   
       color: #fff;
   }
+
 
 .about-img-content{position:relative;display:flex;}
 .about-img-content img{width:48%;margin-right:5%;}
@@ -5180,7 +5264,7 @@ ul.bannerSlider{
         float: none;
     }
 
-    .bannerSlider .slide__text h2{font-size: 28px;}
+    .bannerSlider .slide__text h2{font-size: 18px;}
     .about-img-content{display: block; margin-bottom: 20px;}
     .about-img-content img{
         width: 50%;
@@ -5193,6 +5277,33 @@ ul.bannerSlider{
     .row{width: 100%;}
 }
 @media screen and (max-width: 575px) {
+    .mobile-banner{display: block;padding-top: 68px;}
+    .page-section {padding-top:0; position: relative;}
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+        }
+        body { margin: 0; } 
+        div#slider { overflow: hidden; }
+        div#slider figure img { width: 20%; float: left; }
+        div#slider figure { 
+          position: relative;
+          width: 500%;
+          margin: 0;
+          left: 0;
+          text-align: left;
+          font-size: 0;
+          animation: 30s slidy infinite; 
+        }
+    
+    .header-banner{display: none;}
     .header-top .header-top-content .header-top-info ul li {
         float: none;
     }
@@ -5245,7 +5356,7 @@ ul.bannerSlider{
     .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
         padding-right: 0;
     }
-    .cta::before{height: 351px;}
+    .cta::before{height: 255px;}
     .nutrisoil-content{width: 90%;}
     #about{padding-right: 15px;}
     .row-wrapper{margin-top: 0;}
