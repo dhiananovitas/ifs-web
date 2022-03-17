@@ -1,4 +1,144 @@
+.carousel-ban-text-adj{
+    position: absolute;
+    width: 800px;
+    display: flex;
+    /* margin-left: 18px; */
+    bottom: 180px;
+  background-color: #000000a8;
+border-radius: 12px;
+padding: 28px;
+left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.carousel-header-adj{
+    margin: 0;
+    vertical-align: top;
+    padding-left: 0px;
+    text-align: left;
+    left: -3px;
+    color: aliceblue;
+}
+.carousel-paragraph{
+margin-left: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+padding-left: 0;  
+color: aliceblue;
+font-size: 16px;
+}
+.carousel-img-fit{
+min-width: 100%;
+min-height: 500px;
+object-fit: cover;
+object-position: 50% 50%;
+}
+.carousel-banner{
+max-height: 600px !important;
+min-height: 500px;
+}
+.carousel-banner-indicator{
+margin-left:auto;
+margin-right:auto;
+transition: 1s;
+}
+.carousel-indicators li {
+width: 250px;
+margin-top: -150px;
+/* margin-left: -60px; */
+transition: 1s;
+opacity: 1;
+}
+.carousel-indicators li.active {
+border-top: 4px solid #8e3387;
+z-index:15;
+}
+.carousel-swap-adjuster{
+    bottom: 0px;
+}
+.carousel-banner.active { 
+display: flex;
+justify-content: center;
+}
+.carousel-banner.carousel-item-next{
+display: flex;
+justify-content: center;
+}
+.carousel-banner.carousel-item-prev{
+display: flex;
+justify-content: center;
+}
+
+.btn-primary{background-color: #e97418 !important;
+    border-color: #ab5910 !important;}
+@media (max-width: 768px) {
+.carousel-swap-adjuster{
+    bottom: -40px;
+}
+}
+@media (max-width: 550px) {
+.carousel-swap-adjuster{
+    bottom: -75px;
+}
+}
+@media (max-width: 380px) {
+.carousel-swap-adjuster{
+    bottom: -105px;
+}
+}
+
+/* h1, p{
+color:white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
+p{
+font-size: 28px;
+}
+a{
+-webkit-text-stroke-width: 0px;
+}
+.tile_1{
+z-index: 14;
+}
+.tile_2{
+z-index: 13;
+}
+.tile_3{
+z-index: 12;
+} */
+
 @media screen and (max-width: 2000px) {
+    .logo-style{color: brown;font-weight: 600;text-align: center;}
+    .milestone{
+        background: linear-gradient(45deg, #501500 0%, #131411 100%), radial-gradient(100% 225% at 100% 0%, #d1a137 0%, #1a3a32 100%), linear-gradient(225deg, #743d0a 0%, #560d0d 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #ffce78 35%, #644208 60%, #173142 60%, #ad8a23 67%, #6c757d 67%, #4a9097 100%);
+        background-blend-mode: screen, overlay, hard-light, normal;
+    }
+    .h2-milestone{color: white}
+    .section-title .h2-milestone:after{background-color: #fff;}
+     /*video*/
+  .bg-video{width: 50%;height: auto;}
+  /* .video{background-color: #232323;} */
+  .video-preview {position: relative;height: auto;overflow: hidden;}
+  .ldp-wrap-video{ display: flex; flex-direction: column; margin: 30px 0 -20px; }
+  .video-mw-overlay { position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; z-index: 999999;overflow: hidden; background: rgba(0, 0, 0, 0.8); }
+ .video-mw-video-popup{position:fixed;left:50%;top:50%;width:60%;margin:auto;z-index:9999999;padding:0;background-color:#181818;border-radius:2px;max-height:90%;overflow:auto;box-shadow:2px 2px 8px -1px rgba(0,0,0,1);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+  .video-mw-vid-btn{ display: flex; justify-content: center; padding: 10px 0; }
+  .video-mw-vid-close{ background: #f60; color: #fff; border: none; padding: 5px 40px; border-radius: 2px; cursor: pointer; }  
+  .video-mw-vid-cnt { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+  .video-mw-vid-cnt iframe, .ga2100-video-mw-vid-cnt object, .ga2100-video-mw-vid-cnt embed { position: absolute; top: 0; left: 0; width: 100%; height:100%; }    
+  .ldp-video{ padding:0;}  
+  .video {cursor: pointer;position: relative;top: 0;z-index: 1;left: 0;right: 0;}
+  .video-content {position: absolute; top: 35%; left: 0; right: 0; color:white; width: 70%; margin: 0 auto; }
+  .video-content:after{content:'\25BA';width:30px;height:30px;font-size:16px;background-color:white;color:grey;border-radius:100%;display:flex;align-items:center;justify-content:center;cursor:pointer;position:absolute;left:0;right:0;margin:0 auto;top:50px;}
+  .video-caption {font-style: normal;font-weight: 300;font-size: 16px;line-height: 28px;text-align: center;color: #FFFFFF;}
+  #player {display:none;}
+  #player{height: 300px;}
+
+
+
+  
+
 body{margin:none !important;scroll-behavior: smooth;}
 display-flex,
 .display-flex,
@@ -48,6 +188,7 @@ list-type-ulli,
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 .footer-top{background-color: beige;}
 a:hover,
@@ -98,6 +239,9 @@ input[type="radio"] {
 img {
     max-width: 100%;
     height: auto;
+    /* padding: 8px 0px; */
+    display: block;
+    margin: 0 auto;
 }
 figure {
     margin: 0;
@@ -105,6 +249,7 @@ figure {
 p {
     margin-bottom: 0;
     line-height: 1.57;
+    font-size: 16px;
 }
 h1,
 h2,
@@ -116,7 +261,7 @@ h6 {
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     color: #333;
 }
 .form-control:focus {
@@ -150,7 +295,7 @@ body {
     line-height: 1.57;
     color: #666;
     background: #fff;
-    font-family: source sans pro, sans-serif;
+    font-family: 'Open Sans';
     width: 100%;position: relative;
 }
 .display-flex {
@@ -180,7 +325,7 @@ body {
 .footer-title h3 {
     font-size: 20px;
     text-transform: uppercase;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     padding: 15px 0 40px;
 }
@@ -189,7 +334,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     padding: 13px 36px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 15px;
     font-weight: 600;
 }
@@ -338,7 +483,7 @@ body {
     display: inline-block;
     color: #fff;
     padding: 14px 36px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 700;
     background: #ffc20a;
@@ -354,7 +499,7 @@ body {
     -ms-border-radius: 4px;
 }
 .title-bold {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
@@ -367,20 +512,20 @@ body {
     color: #fff;
 }
 .title-bold-16 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 700;
     color: #333;
 }
 .title-bold-24 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333;
 }
 .title-bold-20 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
@@ -389,23 +534,23 @@ body {
     color: #ffc20a;
 }
 .title-regular {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 700;
     color: #333;
 }
 .title-regular-white {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 18px;
     text-transform: uppercase;
 }
 .title-regular-14 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 700;
 }
 .title-tab {
-    font-family: source sans pro, sans-serif;
+    font-family: 'Open Sans';
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -414,7 +559,7 @@ body {
     margin-bottom: 50px;
 }
 .section-title h2 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -440,7 +585,7 @@ body {
     margin-bottom: 50px;
 }
 .section-title-desc h2 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -469,7 +614,7 @@ body {
     margin-bottom: 60px;
 }
 .section-title-2 h2 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -480,7 +625,7 @@ body {
     margin-bottom: 50px;
 }
 .section-title-left h2 {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -505,7 +650,7 @@ body {
 }
 .page-title h1 {
     font-size: 40px;
-    font-family: source sans pro, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -569,7 +714,7 @@ body {
 
 /* timeline */
 /* The actual timeline (the vertical ruler) */
-.milestone{background: wheat;}
+/* .milestone{background: wheat;} */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -581,7 +726,7 @@ body {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: #cbbd96;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -821,12 +966,12 @@ body {
 }
 .read-more-14 {
     font-size: 14px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
 }
 .read-more-14-regular {
     font-size: 14px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     padding: 10px 20px;
     display: inline-block;
@@ -874,7 +1019,7 @@ body {
     text-align: center;
 }
 .read-more-regular {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 600;
     padding: 10px 30px;
     text-transform: uppercase;
@@ -926,7 +1071,7 @@ body {
     border-bottom-right-radius: 8px;
 }
 .buy-now {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 600;
     padding: 12px 40px;
     text-transform: uppercase;
@@ -1093,7 +1238,7 @@ body {
 }
 .example-val:before {
     content: "Value: ";
-    font: 700 12px Arial;
+    font: 700 12px 'Open Sans';
 }
 .heading-section {
     display: none;
@@ -1217,7 +1362,7 @@ body {
     color: #957e39;
     opacity: 1;
 }
-@font-face {
+/* @font-face {
     font-family: roboto condensed;
     font-style: normal;
     font-weight: 400;
@@ -1252,9 +1397,9 @@ body {
     src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url(../fonts/roboto-condensed/roboto-condensed-v16-latin-700italicd41d.eot?#iefix) format("embedded-opentype"),
         url(../fonts/roboto-condensed/roboto-condensed-v16-latin-700italic.woff2) format("woff2"), url(../fonts/roboto-condensed/roboto-condensed-v16-latin-700italic.woff) format("woff"),
         url(../fonts/roboto-condensed/roboto-condensed-v16-latin-700italic.ttf) format("truetype"), url(../fonts/roboto-condensed/roboto-condensed-v16-latin-700italic.svg#RobotoCondensed) format("svg");
-}
+} */
 @font-face {
-    font-family: open sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: url(../fonts/opensans/open-sans-v15-latin-regular.eot);
@@ -1262,7 +1407,7 @@ body {
         url(../fonts/opensans/open-sans-v15-latin-regular.woff) format("woff"), url(../fonts/opensans/open-sans-v15-latin-regular.ttf) format("truetype"), url(../fonts/opensans/open-sans-v15-latin-regular.svg#OpenSans) format("svg");
 }
 @font-face {
-    font-family: open sans;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 400;
     src: url(../fonts/opensans/open-sans-v15-latin-italic.eot);
@@ -1270,7 +1415,7 @@ body {
         url(../fonts/opensans/open-sans-v15-latin-italic.woff) format("woff"), url(../fonts/opensans/open-sans-v15-latin-italic.ttf) format("truetype"), url(../fonts/opensans/open-sans-v15-latin-italic.svg#OpenSans) format("svg");
 }
 @font-face {
-    font-family: open sans;
+    font-family:'Open Sans';
     font-style: normal;
     font-weight: 600;
     src: url(../fonts/opensans/open-sans-v15-latin-600.eot);
@@ -1278,7 +1423,7 @@ body {
         url(../fonts/opensans/open-sans-v15-latin-600.woff) format("woff"), url(../fonts/opensans/open-sans-v15-latin-600.ttf) format("truetype"), url(../fonts/opensans/open-sans-v15-latin-600.svg#OpenSans) format("svg");
 }
 @font-face {
-    font-family: open sans;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 600;
     src: url(../fonts/opensans/open-sans-v15-latin-600italic.eot);
@@ -1287,7 +1432,7 @@ body {
         url(../fonts/opensans/open-sans-v15-latin-600italic.svg#OpenSans) format("svg");
 }
 @font-face {
-    font-family: open sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     src: url(../fonts/opensans/open-sans-v15-latin-700.eot);
@@ -1295,7 +1440,7 @@ body {
         url(../fonts/opensans/open-sans-v15-latin-700.woff) format("woff"), url(../fonts/opensans/open-sans-v15-latin-700.ttf) format("truetype"), url(../fonts/opensans/open-sans-v15-latin-700.svg#OpenSans) format("svg");
 }
 @font-face {
-    font-family: open sans;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 700;
     src: url(../fonts/opensans/open-sans-v15-latin-700italic.eot);
@@ -1303,7 +1448,7 @@ body {
         url(../fonts/opensans/open-sans-v15-latin-700italic.woff2) format("woff2"), url(../fonts/opensans/open-sans-v15-latin-700italic.woff) format("woff"), url(../fonts/opensans/open-sans-v15-latin-700italic.ttf) format("truetype"),
         url(../fonts/opensans/open-sans-v15-latin-700italic.svg#OpenSans) format("svg");
 }
-@font-face {
+/* @font-face {
     font-family: raleway;
     font-style: normal;
     font-weight: 400;
@@ -1418,7 +1563,7 @@ body {
     src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"), url(../fonts/montserrat/montserrat-v12-latin-900italicd41d.eot?#iefix) format("embedded-opentype"),
         url(../fonts/montserrat/montserrat-v12-latin-900italic.woff2) format("woff2"), url(../fonts/montserrat/montserrat-v12-latin-900italic.woff) format("woff"),
         url(../fonts/montserrat/montserrat-v12-latin-900italic.ttf) format("truetype"), url(../fonts/montserrat/montserrat-v12-latin-900italic.svg#Montserrat) format("svg");
-}
+} */
 .footer-top .footer-top-content {
     font-size: 15px;
     padding: 60px 0;
@@ -1428,6 +1573,7 @@ body {
 }
 .footer-top .footer-top-content .footer-info .info-desc {
     padding-bottom: 20px;
+    font-size: 16px;
 }
 .footer-top .footer-top-content .footer-links ul {
     width: 50%;
@@ -1461,7 +1607,13 @@ body {
 }
 .footer-top .footer-top-content .footer-work-time .work-time-desc {
     margin-bottom: 15px;
+    font-size: 16px;
 }
+
+.footer-top .footer-top-content .footer-work-time .work-time {
+    font-size: 16px;
+}
+
 .footer-top .footer-top-content .footer-work-time .work-time span {
     margin-bottom: 4px;
 }
@@ -1520,7 +1672,7 @@ body {
 }
 .menu ul li {
     position: relative;
-    padding: 55px 20px;
+    padding: 10px 20px;
 }
 .menu ul li a {
     text-transform: uppercase;
@@ -2026,7 +2178,7 @@ body {
     -ms-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .fixed .menu ul li {
-    padding: 35px 20px;
+    padding: 20px 20px;
 }
 .fixed .logo img {
     width: 85%;
@@ -2071,7 +2223,7 @@ body {
     margin-bottom: 10px;
 }
 .all-services ul li a {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
@@ -2264,7 +2416,7 @@ body {
 }
 .widget_search form:before {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: 'Open Sans' 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2346,7 +2498,7 @@ body {
     line-height: 1.4;
 }
 .error-content .error-content-info .error-desc {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 25px;
     font-style: italic;
     color: #f2f2f2;
@@ -2401,7 +2553,8 @@ ul.bannerSlider{
 
 .about-img-content{position:relative;display:flex;}
 .about-img-content img{width:48%;margin-right:5%;}
-.about-content{width:100%;text-align:justify;font-size: 19px;}
+.about-content{width:100%;text-align: center;
+    font-size: 16px;}
 
 .about-us {
     padding-top: 90px;
@@ -2463,7 +2616,7 @@ ul.bannerSlider{
     z-index: 3;
 }
 .company-skills .company-skills-video .info .video-title {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 700;
     color: #ffc20a;
@@ -2518,7 +2671,7 @@ ul.bannerSlider{
     margin-bottom: 25px;
 }
 .company-skills .company-skills-content .company-skills-list ul li .title-regular-14 span:nth-child(2) {
-    font-family: source sans pro, sans-serif;
+    font-family: 'Open Sans';
 }
 .company-skills .company-skills-content .company-skills-list ul li .progress {
     margin: 10px 0 20px;
@@ -2593,7 +2746,7 @@ ul.bannerSlider{
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    font-family: source sans pro, sans-serif;
+    font-family: 'Open Sans';
 }
 .choose-us-content .choose-us-list .choose-us-list-content ul li:hover .title {
     color: #ffc20a;
@@ -2730,7 +2883,7 @@ ul.bannerSlider{
     font-weight: 700;
 }
 .comming-soon-content #count-down-time .count-down-item span:nth-child(2) {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     text-transform: uppercase;
 }
 .comming-soon-content .email-subcribe .email-subcribe-text {
@@ -2823,7 +2976,7 @@ ul.bannerSlider{
 }
 .contact-title h2 {
     font-size: 30px;
-    font-family: open sans, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
@@ -2942,7 +3095,7 @@ ul.bannerSlider{
 }
 .slide-show .slide-content .slide-title {
     text-transform: uppercase;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     padding: 10px 0;
     font-weight: 700;
 }
@@ -2981,7 +3134,7 @@ ul.bannerSlider{
     color: #fff;
     opacity: 0;
     font-size: 40px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     z-index: 5;
 }
 .services .services-content .item figure:hover:after {
@@ -3004,7 +3157,8 @@ ul.bannerSlider{
 .services .services-content .item .info .desc {
     margin-top: 5px;
     margin-bottom: 0;
-    text-align: justify;
+    text-align: center;
+    font-size: 16px;
 }
 .our-sucess-content .sucess-item .item {
     position: relative;
@@ -3085,9 +3239,9 @@ ul.bannerSlider{
     color: #957e39;
 }
 .our-process-content .item .info .desc {
-    font-size: 15px;
-    margin-top: 3px;
-    text-align: justify;
+    font-size: 16px;
+    margin-top: 0;
+    text-align: left;
 }
 .testimonials {
     position: relative;
@@ -3124,15 +3278,16 @@ ul.bannerSlider{
 }
 .testimonials-content .item .info .item-content p {
     padding: 15px 0 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .testimonials-content .item .info .item-content span {
-    font-size: 15px;
+    font-size: 16px;
 }
 .testimonials-content .item .info .item-content .name {
     color: #333;
     font-weight: 700;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
+    font-size: 16px;
 }
 .our-team {
     padding: 90px 0 100px;
@@ -3219,7 +3374,7 @@ ul.bannerSlider{
 }
 .cta .cta-content .cta-info .cta-title {
     font-size: 34px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     margin-bottom: 30px;
     color: #fff;
@@ -3295,7 +3450,7 @@ ul.bannerSlider{
     background: #ffc20a;
 }
 .cta-home2 .cta-title {
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
@@ -3354,7 +3509,7 @@ ul.bannerSlider{
 }
 .home2-testimonials-content .item .info .item-content .name {
     color: #fff;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -3400,7 +3555,7 @@ ul.bannerSlider{
     color: #fff;
     opacity: 0;
     font-size: 40px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     z-index: 5;
 }
 .home2-blog .blog-content .item figure:hover:after {
@@ -3529,7 +3684,7 @@ ul.bannerSlider{
     color: #f2f2f2;
 }
 .home3-slide-show .slide-content .slide-title-roboto h3 {
-    font-family: roboto condensed, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     position: relative;
     z-index: 100;
@@ -3565,7 +3720,8 @@ ul.bannerSlider{
 }
 
 .nutrisoil-wrap-content{
-    background: beige;
+    background-image: url('../assets/images/bg.png') no-repeat;
+    background-size: cover;
     position: relative;
     width: 100%;
     padding: 60px 0px 10px 0px;
@@ -3779,7 +3935,7 @@ ul.bannerSlider{
 }
 .home3-testimonials-content .slider-info .item .info .item-content .name {
     color: #fff;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -3909,7 +4065,7 @@ ul.bannerSlider{
 }
 .cta-home5 .cta-content {
     font-size: 35px;
-    font-family: montserrat, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     width: 40%;
     text-align: center;
@@ -4118,7 +4274,7 @@ ul.bannerSlider{
 }
 .home6-slide-show .slide-content .slide-title {
     font-size: 45px;
-    font-family: montserrat, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -4626,7 +4782,7 @@ ul.bannerSlider{
 }
 .shop-content .item .info .price span {
     font-size: 20px;
-    font-family: source sans pro, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     color: #333;
 }
@@ -4961,7 +5117,7 @@ ul.bannerSlider{
     text-transform: uppercase;
     color: #fff;
     padding: 12px 36px;
-    font-family: raleway, sans-serif;
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 600;
     background: #ffc20a;
